@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.yleplugin1" name="Yleplugin1" version="1.0.0" provider-name="xxzandy">
+<addon id="plugin.video.yleplugin1" name="Yleplugin1" version="1.0.1" provider-name="xxzandy">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.requests" version="2.31.0"/>
@@ -26,7 +26,11 @@
             <icon>resources/media/icon.png</icon>
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
-        <news>v1.0.0 (2026-06-11)
+        <news>v1.0.1 (2026-06-11)
+- VOD starts at full quality immediately (new "Video-on-demand quality"
+  setting, default Maximum; switch to Adaptive on slow connections)
+
+v1.0.0 (2026-06-11)
 - Browse the full Areena catalog: front page, 12 categories, series/seasons/episodes
 - Live TV (TV1, TV2, Teema &amp; Fem) with now/next EPG + live events
 - Search with history; live radio and podcasts
