@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.yleplugin1" name="Yleplugin1" version="0.1.0" provider-name="xxzandy">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.requests" version="2.31.0"/>
+        <import addon="inputstream.adaptive" version="21.0.0"/>
+        <import addon="inputstream.ffmpegdirect" version="21.0.0" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en_GB">Yle Areena: catalog, live TV, search, radio and podcasts</summary>
+        <summary lang="fi_FI">Yle Areena: selaus, suorat, haku, radio ja podcastit</summary>
+        <description lang="en_GB">Unofficial, visually rich Yle Areena client: browse the on-demand catalog by category, watch the live TV channels and live events, search, and listen to live radio and podcasts.</description>
+        <description lang="fi_FI">Epävirallinen Yle Areena -asiakas: selaa ohjelmistoa kategorioittain, katso suorat TV-kanavat ja tapahtumat, hae sisältöä sekä kuuntele radiota ja podcasteja.</description>
+        <disclaimer lang="en_GB">This add-on is not endorsed by Yle. Most content is viewable only in Finland.</disclaimer>
+        <disclaimer lang="fi_FI">Tämä ei ole Ylen virallinen lisäosa. Suurin osa sisällöstä näkyy vain Suomessa.</disclaimer>
+        <platform>all</platform>
+        <language>fi sv</language>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/xxzandy/kodi-areena</source>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+        <news>v0.1.0 — initial development version</news>
+    </extension>
+</addon>
+<addon id="repository.yleplugin1" name="Yleplugin1 Repository" version="1.0.0" provider-name="xxzandy">
+    <extension point="xbmc.addon.repository" name="Yleplugin1 Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/xxzandy/kodi-repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/xxzandy/kodi-repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/xxzandy/kodi-repo/main/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Repository for Yleplugin1 (Yle Areena addon)</summary>
+        <description lang="en_GB">Personal Kodi repository serving the Yleplugin1 Yle Areena addon with automatic updates.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/xxzandy/kodi-repo</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
